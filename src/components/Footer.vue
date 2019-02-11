@@ -25,7 +25,7 @@
       </v-card-title>
 
       <v-card-actions class="grey darken-3 justify-center">
-        &copy;2019 — <strong>Trường</strong>
+        &copy;2019 — <strong>Truong</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
@@ -37,11 +37,11 @@
         name: "Footer",
         data: () => ({
         icons: [
-                'fab fa-facebook',
-                'fab fa-twitter',
-                'fab fa-google-plus',
-                'fab fa-linkedin',
-                'fab fa-instagram'
+                'fa fa-facebook',
+                'fa fa-twitter',
+                'fa fa-google-plus',
+                'fa fa-linkedin',
+                'fa fa-instagram'
             ]
         })
     }
