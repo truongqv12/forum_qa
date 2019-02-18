@@ -32,14 +32,9 @@
                 },
             }
         },
-        // https://dota2-autochess.tk/api/question
-        // http://www.dota2-autochess.tk/api/auth/login
-        //http://pokeapi.co/api/v2/pokemon/ditto/
         methods: {
             login() {
-                this.axios.post('http://localhost:8000/api/auth/login', this.form)
-                    .then(response => console.log(response.data))
-                    .catch(error => console.log(error.response.data))
+                User.login(this.form)
             }
         }
     }

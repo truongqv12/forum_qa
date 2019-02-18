@@ -8,11 +8,13 @@ import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false;
 
-Vue.use(VueAxios, axios)
+Vue.use(VueAxios, axios);
 
+import User from './Helpers/User'
+window.User = User;
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+    router,
+    store,
+    render: h => h(App)
+}).$mount('#app');
