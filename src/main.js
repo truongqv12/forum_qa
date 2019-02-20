@@ -13,6 +13,8 @@ Vue.use(VueAxios, axios);
 import User from './Helpers/User'
 window.User = User;
 
+window.EventBus = new Vue();
+
 new Vue({
     router,
     store,

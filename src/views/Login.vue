@@ -3,12 +3,21 @@
 </template>
 
 <script>
-import LoginForm from '../components/LoginForm.vue';
-export default {
-    components: {
-        loginform : LoginForm
+    import LoginForm from '../components/auth/LoginForm';
+    // import Signup from '../components/auth/Signup';
+    import User from "../Helpers/User";
+
+    export default {
+        components: {
+            loginform: LoginForm,
+            // signup: Signup
+        },
+        created() {
+            if (User.loggedIn()) {
+                this.$router.push({name: 'forum'});
+            }
+        }
     }
-}
 </script>
 
 <style>

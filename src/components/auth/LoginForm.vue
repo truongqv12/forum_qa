@@ -15,7 +15,10 @@
                     required
             ></v-text-field>
 
-            <v-btn color="success" type="submit">submit</v-btn>
+            <v-btn color="success" type="submit">Login</v-btn>
+            <router-link to="/signup">
+                <v-btn color="blue">Signup</v-btn>
+            </router-link>
         </v-form>
     </v-container>
 
