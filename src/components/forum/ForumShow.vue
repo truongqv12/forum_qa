@@ -1,12 +1,10 @@
 <template>
-    <v-container>
-        <v-layout
-                text-xs-center
-                wrap
-        >
-            <v-card-title primary-title>
-                Như lùn
-            </v-card-title>
+    <v-container fluid gird-list-md>
+        <v-layout row wrap>
+            <v-flex xs8>
+                <question></question>
+            </v-flex>
+            sidebar
         </v-layout>
     </v-container>
 </template>
